@@ -490,6 +490,7 @@ a {
     border-radius: 8px;
 }
 
+
 /* Center headings and footer text in About sections */
 .about-intro h1,
 .creator h2,
@@ -507,6 +508,35 @@ a {
     text-align: center;
 }
 
+/* Make all text inside About page footers centered */
+.about-intro footer,
+.creator footer,
+.inspiration footer,
+.purpose footer,
+.direction footer,
+.location footer {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
+}
+
+/* Center the main website footer */
+.footer {
+    margin-top: 64px;
+    padding: 32px;
+    background: var(--primary-dark);
+    color: var(--white);
+    text-align: center;
+}
+
+.footer p {
+    color: var(--white);
+    text-align: center;
+}
+
+
 
 /* 8. FOOTER AND HELPER CLASSES */
 
@@ -519,7 +549,6 @@ a {
 }
 
 .footer p {
-    margin: 0;
     color: var(--white);
 }
 
@@ -645,14 +674,27 @@ a {
         padding: 28px 18px;
     }
 
-    .footer {
-        margin-top: 40px;
-        padding: 25px 18px;
-    }
-
     /* Embedded map */
     .map iframe {
         height: 350px;
+    }
+    .footer {
+    margin-top: 64px;
+    padding: 32px;
+    background: var(--primary-dark);
+    color: var(--white);
+    text-align: center;
+}
+
+.footer p {
+    color: var(--white);
+    text-align: center;
+    align-items: center;
+    }
+    *footer{
+        align-items: center;
+        display: flex;
+        justify-content: center; /* Center horizontally */
     }
 }
 
@@ -775,5 +817,7 @@ a {
     .footer {
         margin-top: 30px;
         padding: 22px 12px;
+        align-items: center;
     }
+  
 }
